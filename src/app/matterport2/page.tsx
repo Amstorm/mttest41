@@ -5,7 +5,7 @@ const Page: React.FC = () => {
   return (
     <div>
       <h1>Matterport Space Viewer</h1>
-      <MatterportViewer sdkKey="rwtd157qccg7hygpxx29ncrrc" spaceId="ZXCyXEPbdpA" />
+      <MatterportViewer sdkKey="xtet8rr5t5i42rwanintd7rzb" spaceId="JGPnGQ6hosj" />
     </div>
   );
 };

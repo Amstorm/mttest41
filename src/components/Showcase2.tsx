@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from 'react';
-const appKey = 'rwtd157qccg7hygpxx29ncrrc';
+const appKey = 'xtet8rr5t5i42rwanintd7rzb';
 import { MpSdk } from '@matterport/sdk';
 import styles from './Showcase.module.css';
 
@@ -17,7 +17,7 @@ export function Showcase() {
       if (!started && container.current) {
         setStarted(true);
         const mpSdk: MpSdk = await setupSdk(appKey, {
-          space: 'ZXCyXEPbdpA',
+          space: 'JGPnGQ6hosj',
           container: container.current,
           iframeQueryParams: {
             qs: '1',
