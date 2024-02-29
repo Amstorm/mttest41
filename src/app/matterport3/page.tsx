@@ -1,10 +1,13 @@
-import { Showcase } from "../../components/Showcase2";
+import React from 'react';
+import MatterportViewer from '../../components/MatterportViewer'; // Adjust the import path as necessary
 
-export default function Home() {
+const Page: React.FC = () => {
   return (
-    <main className="flex flex-col items-center justify-between p-24 w-1/2 m-auto">
-      <h1 className="text-2xl pb-10">List Of All Titles</h1>
-      <Showcase />
-    </main>
+    <div>
+      <h1>Matterport Space Viewer</h1>
+      <MatterportViewer sdkKey="xtet8rr5t5i42rwanintd7rzb" spaceId="JGPnGQ6hosj" />
+    </div>
   );
-}
+};
+
+export default Page;

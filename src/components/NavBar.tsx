@@ -50,6 +50,21 @@ export default function NavBar({ isSignedIn }: { isSignedIn: boolean }) {
       label: "Add Title",
       loggedIn: true,
     },
+    {
+      href: "/matterport1",
+      label: "MP 1",
+      loggedIn: false,
+    },
+    {
+      href: "/matterport2",
+      label: "MP 2",
+      loggedIn: false,
+    },
+    {
+      href: "/matterport3",
+      label: "MP 3",
+      loggedIn: false,
+    },
   ];
 
   const routes = defaultRoutes.filter(
