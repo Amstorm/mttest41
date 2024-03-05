@@ -60,11 +60,6 @@ export default function NavBar({ isSignedIn }: { isSignedIn: boolean }) {
       label: "MP 2",
       loggedIn: false,
     },
-    {
-      href: "/matterport3",
-      label: "MP 3",
-      loggedIn: false,
-    },
   ];
 
   const routes = defaultRoutes.filter(

@@ -6,7 +6,7 @@ import { MpSdk } from '@matterport/sdk';
 import styles from './Showcase.module.css';
 
 export function Showcase() {
-  const [sdk, setSdk] = useState(null);
+	const [sdk, setSdk] = useState<MpSdk | null>(null); 
   const [started, setStarted] = useState(false);
 
   const container = useRef<HTMLDivElement>(null);
@@ -19,6 +19,9 @@ export function Showcase() {
         const mpSdk: MpSdk = await setupSdk(appKey, {
           space: 'JGPnGQ6hosj',
           container: container.current,
+		  iframeAttributes: {
+		  width: '800px', height: '500px'
+		  },
           iframeQueryParams: {
             qs: '1',
           },
